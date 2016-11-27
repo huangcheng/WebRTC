@@ -1,0 +1,19 @@
+{application, webrtc,
+ [{description, "An OTP application"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, { webrtc_app, [3000]}},
+  {applications,
+   [kernel,
+    stdlib,
+    cowboy,
+    crypto,
+    jsx
+   ]},
+  {env,[]},
+  {modules, [ws_handler, session_storage]},
+
+  {maintainers, []},
+  {licenses, []},
+  {links, []}
+ ]}.
